@@ -158,7 +158,7 @@ log_price_coef_c <- round(tsls_c$coefficients[2], 2)
 # Question d:
 ### Repeat the exercise in (c), but include fixed effects for each year, month, and country. Report the estimated price elasticity of demand and the F-statistic testing for relevant and non-weak instruments. 
 
-\noindent Hint: you can use the command `as.factor(country) + as.factor(year) + as.factor(month)` to the `ivreg` function in R. 
+\noindent Hint: you can use the command `as.factor(country) + as.factor(year) + as.factor(month)` to the `ivreg` function in R.  
 
 ```{r}
 tsls_d <- ivreg(log_volume_sold ~ log_price + as.factor(year) + as.factor(month) + as.factor(country) | as.factor(year) + as.factor(month) + as.factor(country) + wind_m_s, data = data)
