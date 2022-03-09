@@ -49,7 +49,7 @@ options(scipen=999) # not scientific notation
 \noindent Note: `log()` is used to denote the natural logarithm
 
 # Read Data
-```{r message=FALSE, warning=FALSE}
+```{r message=FALSE, warning=FALSE, include=FALSE}
 data <- read_csv(here("data", "EU_sardines.csv"))
 ```
 
@@ -100,7 +100,14 @@ ci_low
 ci_high <- model_a$conf.high[2]
 ci_high
 ```
-\noindent The 95% confidence interval ranges from `r `ci_low` to `r `ci_high`. This means that there is a 95% chance that this interval includes the true price elasticity value. Since the confidence interval does not contain -1, we reject the null hypothesis that price elasticity is equal to -1.
+
+```{r}
+# more efficient method
+linearHypothesis(model_a, c("log_price = -1"), white.adjust = "hc2")
+```
+
+
+\noindent The 95% confidence interval ranges from `r `ci_low` to `r `ci_high`. This means that there is a 95% chance that this interval includes the true price elasticity value. Since the confidence interval does not contain -1 and p-value of the linear hypothesis test is statistically significant, we reject the null hypothesis that price elasticity is equal to -1. 
 
 # Question b:
 ### Estimate the first-stage regression relating `log(price_euro_kg)` to `wind_m_s`. Interpret the estimated coefficient on wind speed. Does it have the expected sign? Also test for the relevance of the instrument and whether it is a "weak" instrument by reporting the proper F-statistic.
@@ -174,6 +181,10 @@ log_price_coef_d <- round(tsls_d$coefficients[2], 2)
 
 ```{r}
 # run just the first stage with the new regressors
+# test for strong/weak instrument occurs in the first stage
+# the first stage is the right hand side of the w stage
+# the only instrument is wind speed...wind is an instrument for log_price
+# you only want one instrument per endogenous variable
 fs_d <- lm_robust(log_price ~ wind_m_s + as.factor(year) + as.factor(month) + as.factor(country), data = data)
 ```
 
@@ -184,6 +195,3 @@ f_statistic_d_value <- round(f_statistic_d$Chisq[2], 2)
 \noindent The F-statistic for the instrument of wind in the model relating `log(price_euro_kg)` to `wind_m_s` is `r f_statistic_d_value` with fixed effects for year, month, and country. Since this F-statistic is a lot greater than 10, wind speed is NOT a "weak" instrument. Wind speed is a valid instrument for explaining `log(price_euro_kg)`.  
 
 \noindent The F-statistic in part d is lower than the F-statistic in part b because we are now controlling for other things that explain price such as seasonality, country effects, and yearly fluctuations. There is less variation left for wind to explain, but wind still explains some of the variation in price.
-
-xxx...Do we need to get F-statistic for all variables (year, month, country) or just wind? Do we need to identify which are strong and which are weak instruments?
-

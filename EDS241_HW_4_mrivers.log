@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.1.30)  4 MAR 2022 22:03
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.1.30)  8 MAR 2022 19:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -920,27 +920,27 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 136.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 168.
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 162.
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 168.
+(hyperref)                than one, level fixed on input line 162.
 
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 192.
+(Font)              scaled to size 7.0pt on input line 186.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 5.0pt on input line 192.
+(Font)              scaled to size 5.0pt on input line 186.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 10.00092pt on input line 192.
+(Font)              scaled to size 10.00092pt on input line 186.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.00064pt on input line 192.
+(Font)              scaled to size 7.00064pt on input line 186.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.00046pt on input line 192.
+(Font)              scaled to size 5.00046pt on input line 186.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 9.99893pt on input line 192.
+(Font)              scaled to size 9.99893pt on input line 186.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 6.99925pt on input line 192.
+(Font)              scaled to size 6.99925pt on input line 186.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 4.99947pt on input line 192.
+(Font)              scaled to size 4.99947pt on input line 186.
 [1
 
 ]
@@ -949,37 +949,37 @@ File: EDS241_HW_4_mrivers_files/figure-latex/unnamed-chunk-5-1.pdf Graphic file 
 [2]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 347.
+(hyperref)                than one, level fixed on input line 398.
 
-File: EDS241_HW_4_mrivers_files/figure-latex/unnamed-chunk-7-1.pdf Graphic file (type pdf)
-<use EDS241_HW_4_mrivers_files/figure-latex/unnamed-chunk-7-1.pdf>
+File: EDS241_HW_4_mrivers_files/figure-latex/unnamed-chunk-8-1.pdf Graphic file (type pdf)
+<use EDS241_HW_4_mrivers_files/figure-latex/unnamed-chunk-8-1.pdf>
 [3]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 485.
+(hyperref)                than one, level fixed on input line 536.
 
-File: EDS241_HW_4_mrivers_files/figure-latex/unnamed-chunk-11-1.pdf Graphic file (type pdf)
-<use EDS241_HW_4_mrivers_files/figure-latex/unnamed-chunk-11-1.pdf>
+File: EDS241_HW_4_mrivers_files/figure-latex/unnamed-chunk-12-1.pdf Graphic file (type pdf)
+<use EDS241_HW_4_mrivers_files/figure-latex/unnamed-chunk-12-1.pdf>
 [4]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 602.
+(hyperref)                than one, level fixed on input line 653.
 
 [5]
 
-LaTeX Warning: Float too large for page by 383.96999pt on input line 970.
+LaTeX Warning: Float too large for page by 383.96999pt on input line 1021.
 
 [6] [7] (./EDS241_HW_4_mrivers.aux)
 Package rerunfilecheck Info: File `EDS241_HW_4_mrivers.out' has not changed.
-(rerunfilecheck)             Checksum: CE1CF6962BB354F3C9BA3702EAF06F60;5699.
+(rerunfilecheck)             Checksum: 93F4B98D125A446B73FCC4C825C32F17;5699.
  ) 
 Here is how much of TeX's memory you used:
- 23400 strings out of 478190
- 463525 string characters out of 5853478
- 903738 words of memory out of 5000000
- 43679 multiletter control sequences out of 15000+600000
+ 23401 strings out of 478190
+ 463546 string characters out of 5853478
+ 904218 words of memory out of 5000000
+ 43680 multiletter control sequences out of 15000+600000
  475784 words of font info for 78 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 86i,13n,121p,1657b,776s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 86i,13n,121p,1657b,777s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on EDS241_HW_4_mrivers.pdf (7 pages).
